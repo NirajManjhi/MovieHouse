@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".View.MovieDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/movie_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#00000000"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/light_grey"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="Movie Name" />
+
+        <LinearLayout
+            android:id="@+id/overview_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:background="#ECEFF1">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/HeaderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="overview" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/overview"
+                style="@style/DetailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                tools:text="Here goes the movie overview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tagline_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/HeaderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ratings" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/ratings"
+                style="@style/DetailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                tools:text="A simple tagline." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/year"
+                style="@style/DetailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="16dp"
+                android:minHeight="48dp"
+                tools:text="ABCD" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/popularity"
+                style="@style/DetailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_city"
+                android:drawablePadding="16dp"
+                android:minHeight="48dp"
+                tools:text="200.84" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/language"
+                style="@style/DetailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_language"
+                android:drawablePadding="16dp"
+                android:minHeight="48dp"
+                tools:text="English" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
